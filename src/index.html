@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="stylesheet" href="./styles/global.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles/tablet.css">
+	<link rel="stylesheet" href="styles/mobile.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<title>Prueba Dékuple</title>
+</head>
+<body>
+  <header class="header">
+    <div>
+      <picture>
+  	    <img class="header__logo" src="./assets/logo.png" alt="BNP Paribas Group Logo">
+      </picture>
+    </div>
+		<button 
+			class="header__nav-open-button" 
+			id="nav-open-button"
+			aria-label="open menu" 
+			aria-expanded="false" 
+			aria-controls="nav-menu-open"
+		>
+			<i class="bi bi-list"></i>
+		</button>
+		<nav class="header__nav" id="nav">
+			<div class="header__nav-content">
+				<button 
+					class="header__nav-close-button" 
+					id="nav-close-button"
+					aria-label="close menu" 
+					aria-expanded="true" 
+					aria-controls="nav-menu-close"
+				>
+					<i class="bi bi-x"></i>
+				</button>
+				<ul class="header__nav-list">
+					<li class="header__nav-item"><a href="#">Questions fréquentes</a></li>
+					<li class="header__nav-item"><a href="#">Politique de confidentialité</a></li>
+				</ul>
+			</div>
+		</nav>
+  </header>
+    
+  <main>
+    <section class="main__section">
+      <div class="main__section-content">
+        <h1 class="main__title">DÉCOUVREZ VOTRE CADEAU</h1>
+				<form action="">
+					<label class="main__form-label" for="input-code-cadeau">
+						<span class="label">Entrez votre code et chaisissez votre cadeau</span>
+					</label>
+					<div class="main__form-container">
+						<div class="main__form-input-container">
+							<input id="input-code-cadeau" class="main__form-input" type="text" placeholder="Code Cadeau">
+							<span id="input-error-message" class="main__form-error-message main__form-error-message-hidden">Code Cadeau Invalide</span>
+						</div>
+						<button class="main__form-button" type="submit" aria-label="submit button">
+							Découvrez
+						</button>
+					</div>
+				</form>
+      </div>
+    </section>
+  </main>
+
+	<footer class="footer">
+		<ul class="footer__elements">
+			<li>
+				<a href="#">Question Fréquentes</a>
+			</li>
+			<li>
+				<a href="#">Mentions Légales</a>
+			</li>
+			<li>
+				<a href="#">Politique de confidentialité et de cookies</a>
+			</li>
+			<li>
+				<a href="#">Conditions Générales</a>
+			</li>
+		</ul>
+	</footer>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
