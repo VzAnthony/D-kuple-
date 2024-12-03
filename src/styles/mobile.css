@@ -1,0 +1,37 @@
+@media (max-width: 425px) {
+
+    /* main */
+    .main__section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }   
+
+    .main__title {
+        width: auto;
+        font-size: 40px;
+    }
+
+    .main__form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__form-input-container {        
+        width: 100%;
+    }
+
+    .main__form-input {
+        width: 100%;
+    }
+
+    .main__form-button {
+        width: 100%;
+    }
+
+    /* footer */
+    .footer__elements {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+  }
